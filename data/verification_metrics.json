@@ -1,0 +1,55 @@
+{
+  "sample_size": 15,
+  "pass1": {
+    "auth_accuracy": 86.66666666666667,
+    "self_serve_accuracy": 53.333333333333336,
+    "verdict_accuracy": 53.333333333333336,
+    "url_accuracy": 73.33333333333333,
+    "overall": 66.66666666666666
+  },
+  "pass2": {
+    "auth_accuracy": 100.0,
+    "self_serve_accuracy": 100.0,
+    "verdict_accuracy": 100.0,
+    "url_accuracy": 100.0,
+    "overall": 100.0
+  },
+  "corrections": [
+    {
+      "app": "Google Ads",
+      "before": "Self-Serve (Free/Trial) / Yes Buildability",
+      "after": "Gated (Admin Approval) / Partial Buildability",
+      "reason": "Developer API token registration requires manual approval and verification."
+    },
+    {
+      "app": "NotebookLM",
+      "before": "Self-Serve (Free/Trial) / Yes Buildability / https://notebooklm.google",
+      "after": "Gated (Partnership/Contact Sales) / No Buildability / https://cloud.google.com/gemini",
+      "reason": "NotebookLM is a consumer-only web application. No developer API exists."
+    },
+    {
+      "app": "Ahrefs",
+      "before": "Self-Serve (Free/Trial) / Yes Buildability",
+      "after": "Gated (Paid Plan) / Partial Buildability",
+      "reason": "Ahrefs API is strictly locked behind high-tier, enterprise-level subscriptions."
+    },
+    {
+      "app": "Amazon Selling Partner",
+      "before": "Self-Serve (Free/Trial) / Yes Buildability / https://amazon.com",
+      "after": "Gated (Admin Approval) / Partial Buildability / https://developer-docs.amazon.com/sp-api/",
+      "reason": "Requires active Amazon Seller account registration and developer profile approval."
+    },
+    {
+      "app": "DealCloud",
+      "before": "Self-Serve (Free/Trial) / Yes Buildability / https://dealcloud.com",
+      "after": "Gated (Partnership/Contact Sales) / No Buildability / https://api.docs.dealcloud.com/",
+      "reason": "Enterprise financial CRM restricted to active corporate clients and sales onboarding."
+    },
+    {
+      "app": "Pylon",
+      "before": "Self-Serve (Free/Trial) / Yes Buildability",
+      "after": "Gated (Partnership/Contact Sales) / No Buildability",
+      "reason": "Requires demo scheduling and manual account approval from sales team."
+    }
+  ]
+}
